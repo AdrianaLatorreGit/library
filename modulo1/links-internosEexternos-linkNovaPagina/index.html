@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links/âncoras</title>
+  </head>
+  <body>
+    <h2>Usando links externos</h2>
+    <p>
+      Quando fizer uma âncora ou link externo, colocar as tags TARGET = "_BLANK
+      e REL = "EXTERNAL" para que o link abra em outra tab e mantenha a sua no
+      navegado. 
+      <p>Exemplos abaixo com target apenas para os dois primeiros.</p>
+    </p>
+    <ol>
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" rel="external"
+          >Facebook</a
+        >
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" rel="external"
+          >Instagram</a
+        >
+      </li>
+      <li>GitHub</li>
+    </ol>
+    <h2>Usando links internos</h2>
+    <p>Este é o link para miha âncora interna, que me leva até minha <a href="pag002.html" rel="next" target="_self">segunda página</a> </p>
+    <p>Lembrar de usar a tag REL = "NEXT" para dar valor e indicar ao google</p>
+    <p>Você também pode acessar uma página que está dentro de um arquivo, <a href="./noticias/pag003.html" rel="next" target="_self">como aqui</a></p>
+    <p>Usar sempre a tag TARGET, nesse caso usar o _SELF para entendimento do google</p>
+
+    <h2>Links para Download</h2>
+    <ul>
+      <p>Para arquivos em PDF apenas visualização</p>
+      <li><a href="livro/apostila-html-css-javascript.pdf">Baixar o livro HTLM</a></li>
+      <p>Para arquivos zipados o download é permitido. Usar a tag DOWNLOAD = "nome do arquivo", TYPE = "application/pdf" </p>
+      <li><a href="livro/apostila-html-css-javascript.zip" download="apostila-html-css-javascript.zip" type="application/pdf">Baixar o livro HTML em zip</a></li>
+    </ul>
+  </body>
+</html>
