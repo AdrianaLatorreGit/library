@@ -13,6 +13,7 @@ Observar arquivos alterados em seu diretório local
 Mudanças em arquivos rastreados
 * git diff
 
+<<<<<<< HEAD
 Adicione todas as mudanças atuais para o próximo commit
 * git add .
 
@@ -27,3 +28,4 @@ Confirmar todas as alterações previamente preparadas
 
 Mude o último commit
 * git commit --amend
+
