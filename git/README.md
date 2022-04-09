@@ -106,3 +106,20 @@ Use o editor de tour para resolver conflitos manualmente e (após resolver) marc
 
 DESFAZER
 
+Descarte todas as mudanças locais em seu diretório de Trabalhando
+* git reset -hard HEAD
+
+Descartar as alterações locais em um arquivo específico
+* git checkout HEAD <file>
+
+Reverter um commit (produzindo um novo commit com mudanças contrárias)
+* git revert <commit>
+
+Redefina o ponteiro HEAD para um commit anterior...e descarte todas as aterações desde então
+* git reset -hard <commit>
+
+...e preserva todas as mudanças como mudanças não planejadas
+* git reset <commit>
+
+...e preserva as mudanças locais não comprometidas
+* git reset -keep <commit>
