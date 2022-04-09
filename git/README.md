@@ -29,3 +29,16 @@ Confirmar todas as alterações previamente preparadas
 Mude o último commit
 * git commit --amend
 
+HISTÓRICO
+
+Mostrar todos os commits, começando pelo mais novo
+* git log
+
+Mostrar mudanças ao longo do tempo para um arquivo específico
+* git log -p <file>
+
+Mostrar quem alterou o quê e quando em <file>
+* git blame <file>
+
+BRANCHES
+
