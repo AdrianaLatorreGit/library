@@ -1,6 +1,6 @@
 CRIAÇÃO
 
-* git clone (repositório)
+* git clone <url>
 
 Criar novo repositório local
 * git init
@@ -24,7 +24,7 @@ Confirmar todas as alterações locais em arquivos rastreados
 * git commit -a
 
 Confirmar todas as alterações previamente preparadas
-* git commit -m "informação commit"
+* git commit -m <"commit info"
 
 Mude o último commit
 * git commit --amend
@@ -57,5 +57,31 @@ Deletar uma filiar local
 Marque o commit atual com uma tag
 *git tag <tag-name>
 
-ATUALIZAR E PUBLICAR
+ATUALIZAR & PUBLICAR
+
+Lista todos os controles remotos configurados atualmente
+* git remote -v
+
+Mostrar informações sobre um controle remoto
+* git remote show <remote>
+
+Adicione um novo repositório remoto, denominado <remote>
+* git remote add <shortname> <url>
+
+Baixe todas as alterações de <remote>, mas não integre no HEAD
+* git fetch <remote>
+
+Baixe as alterações e marque/integre diretamente no HEAD
+* git pull <remote> <branch>
+
+Publique as alterações locais remotamente
+* git push <remote> <branch>
+
+Exclua uma filial no controle remoto
+* git branch -dh <remote/branch>
+
+Publique suas tags
+* git push --tags
+
+FUNDIR & REBASE
 
