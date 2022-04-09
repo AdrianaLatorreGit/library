@@ -42,3 +42,20 @@ Mostrar quem alterou o quê e quando em <file>
 
 BRANCHES
 
+Listar todos os ramos existentes
+* git branch -av
+
+Mudar ramo HEAD
+* git checkout <branch>
+
+Criar uma nova filial com base
+* git checkout-track <remote/branch>
+
+Deletar uma filiar local
+* git branch -d <branch>
+
+Marque o commit atual com uma tag
+*git tag <tag-name>
+
+ATUALIZAR E PUBLICAR
+
