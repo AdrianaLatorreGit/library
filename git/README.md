@@ -85,3 +85,24 @@ Publique suas tags
 
 FUNDIR & REBASE
 
+Funda <branch> em seu head atual
+* git merge <branch>
+
+Rebase seu HEAD atual em <branch>
+* git rebase <branch>
+
+Abortar um rebase
+* git rebase --abort
+
+Continue um rebase após resolver conflitos
+* git rebase --continue
+
+Use a ferramenta de fusão configurada do tour para resolver conflitos
+* git mergetool
+
+Use o editor de tour para resolver conflitos manualmente e (após resolver) marcar o arquivo como resolvido
+* git add <resolved-file>
+* git rm <resolved-file>
+
+DESFAZER
+
