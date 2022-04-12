@@ -1,0 +1,51 @@
+/* Resetar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ========entendimento Border=============== */
+/* Header */
+.header {
+    border: 4px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Logo e Texto */
+.header-logo {
+    border: 4px solid black;
+    /* Para deixar o conteúdo apenas do objeto */
+    display: flex;
+    /* Para alinhar de cima para baixo (eixo Y) */
+    align-items: center;
+}
+
+.header-logo img {
+    border: 4px solid red;
+    width: 45px;
+    margin-right: 15px;
+}
+.header-logo div {
+    border: 4px solid magenta;
+}
+
+.name {
+    border: 4px solid green;
+    color: black;
+    /* =====Entendimento sobre fontes===== */
+    /* font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1rem; */
+}
+
+.carinho {
+    border: 4px solid blue;
+}
+.btn {
+    padding: 10px 15px;
+    border:4px solid aqua
+
+}
