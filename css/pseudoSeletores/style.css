@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========pseudo-seletores======= */
+
+/* PSEUDO SELETORES DE ESTADO */
+
+/* HOVER quando o mouse "passa" em cima / usando em qualquer elemento*/
+
+/* para elementos cor inteira */
+/* input:hover{
+    background-color: red;
+} */
+
+/* para elementos apenas bordas */
+/* input:hover{
+    border-color: orange;
+} */
+
+/* para elementos do parágrafo */
+/* p:hover{
+    color: blue;
+} */
+
+/* FOCUS muda quando clica
+input:focus{
+    width: 400px;
+}*/
+
+
+/* Setando a borda para determinada cor e com Hover muda de cor */
+/* input{
+    border-color: red;
+    
+}
+input:hover{
+    border-color: blue;
+} */
+
+/* PSEUDO SELETORES DE ORDENAÇÃO */
+
+/* FIRST OF TYPE (primeiro ítem) */
+p:first-of-type{
+    background-color: grey;
+}
+
+/* LAST OF TYPE (último ítem) */
+P:last-of-type{
+    background-color:yellow
+}
+
+/* NTH-CHILD (pega as posições pares e ímpares)
+ODD para ímpar */
+p:nth-child(odd){
+    background-color:green
+}
+/* EVEN para par */
+P:nth-child(even){
+    background-color: aqua;
+}
+
+/* outras
+:link (aplicar estilo aos links <a></a> que tenham a propriedade href
+:visited (aplicar estilo em links <a></a> que tenham sido visitados pelo menos uma vez pelo usuário
+:active  (aplicar estilo aos links <a></a> que estão sendo clicados pelo usuário*/ 
+/* :disabled (aplicado quando um elemento está desabilidato (disabled), usado para das estilos aos campos que não se podem completar em um formulário ou opções destivadas) */
+/* TODOS ELES SÃO ANULADOS POR QUALQUER PSEUDO CLASSE POSTERIOR */
+
+/* =====PSEUDO ELEMENTOS===== */
+/* se usa com junto aos seletores e com ::
+mais usados
+::before (é usando junto a propiedade content para introduzir conteúdo ao HTML usando CSS (o novo conteúdo aparecerá antes do conteúdo interno do elemento))
+::after (é usando junto a propiedade content para introduzir conteúdo ao HTML usando CSS (o novo conteúdo aparecerá depois do conteúdo interno do elemento))
+
+::first-letter
+::first-line */
