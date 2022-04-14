@@ -7,7 +7,7 @@
         <title>Document</title>
     </head>
     <body>
-        <form>
+        <form action="" method="POST">
             <label for="nome">Nome</label>
             <input
                 type="text"
@@ -17,17 +17,47 @@
             />
             <br />
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email"/>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+            />
+            <br />
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" />
+            <br />
+            <label>Você já foi ao cinema esse ano?</label>
+            <br />
+            <!-- ====input cinema=== -->
+
+            <!-- atributo name indica que os dois são do mesmo campo e só deixa clicar em 1 por vez -->
+            <input type="radio" id="sim" value="sim" name="cinema" />
+            <!-- permite clicar em toda a palavra SIM -->
+            <label for="sim">Sim</label>
+            <br />
+            <input type="radio" id="nao" value="nao" name="cinema" />
+            <!-- permite clicar em toda a palavra Não -->
+            <label for="nao">Não</label>
+            <br />
+
+            <!-- =======CHECKBOX==== -->
+            <!-- name no checkbox é para indicar que é o mesmo gupo -->
+            <label for="genero">Qual seu gênero de cinema favorito?</label>
+            <br />
+            <input type="checkbox" name="genero" id="terror" value="terror" />
+            <label for="terror">Terror</label>
+            <br />
+            <input type="checkbox" name="genero" id="drama" value="drama" />
+            <label for="drama">Drama</label>
+            <br />
+            <input type="checkbox" name="genero" id="romance" value="romance" />
+            <label for="romance">Romance</label>
             <br />
             <!-- <input type="submit" value="enviar" /> -->
             <button type="submit">Enviar</button>
         </form>
-
-
     </body>
 </html>
 <form action="POST" value="POST"></form>
-<!-- /*value="Nana"*/  -->
 
