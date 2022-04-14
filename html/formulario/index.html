@@ -9,11 +9,13 @@
     <body>
         <form action="" method="POST">
             <label for="nome">Nome</label>
+            <!-- placeholder para informação que desaparece e required para obrigatoriedade de preenchimento -->
             <input
                 type="text"
                 id="nome"
                 name="nome"
                 placeholder="Digite seu nome"
+                required
             />
             <br />
             <label for="email">Email</label>
@@ -22,10 +24,12 @@
                 id="email"
                 name="email"
                 placeholder="Digite seu email"
+                required
             />
             <br />
             <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" />
+
+            <input type="password" id="senha" name="senha" required />
             <br />
             <label>Você já foi ao cinema esse ano?</label>
             <br />
@@ -54,10 +58,60 @@
             <input type="checkbox" name="genero" id="romance" value="romance" />
             <label for="romance">Romance</label>
             <br />
-            <!-- <input type="submit" value="enviar" /> -->
+            <!-- ==========Tag select que permite criar campos suspensos======= -->
+            <select name="pais" id="pais">
+                <label for="pais">País</label>
+                <br />
+
+                <!-- para "zerar" o campo / não precisa de VALUE e indicar com o SELECTED DISABLED que a palavra não é uma opção-->
+                <option selected disabled>Selecione</option>
+
+                <option value="BRA">Brasil</option>
+                <option value="AR">Argentina</option>
+                <option value="UY">Uruguai</option>
+            </select>
+            <br />
+            <!-- caixa de mes -->
+            <select name="mes" id="mes">
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <br />
+            <!-- caixa de data completa -->
+            <select name="ano" id="ano">
+                <input type="date" name="ano" id="date" />
+            </select>
+
+            <br />
+            <!-- ============Tag textarea para criar longos campos de texto para preenchimento do usuário======== -->
+            <label for="mensagem">Mensagem</label>
+            <br />
+            <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="50"
+                rows="5"
+            ></textarea>
+            <br />
+            <!-- =====último campo é sempre o botão enviar==== -->
+            <button type="reset">Limpar Campos</button>
+
+            <br />
+            <!-- Opções de botão de enviar-->
             <button type="submit">Enviar</button>
+            <br />
+            <!-- <input type="submit" value="Enviar" /> -->
+            <button type="button">Teste para link Js</button>
         </form>
     </body>
 </html>
-<form action="POST" value="POST"></form>
-
