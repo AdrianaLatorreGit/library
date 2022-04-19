@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Valor Inicial: Primeiro se determina qual é o elemnto que iremos manipular e a qual propriedade queremos agregar um efeito. POr exemplo, a cor de fundo e a cor de texto.
+Interação: Também precisaremos determinar sob que interação este elemento vai mudar o valor de sua propriedade. Nesse caso vamos fazer quando colocamos o cursor sobre o elemento com a pseudo-classe :hover
+Valore de trasnsição: Por último, voltamos o seletor do elemento. Aqui adicionamos algo importante: transition. 
+==Propriedade reduzida== 
+transition:
+background-color 0.5s'
+color 0.5s;
+ex
+button{
+    background-color:#000;
+    color: #eaeaea
+    transition: 
+    background-color 0.5s,
+    color 0.5s;
+} */
+
+/* As transições (transition)funcionam na pseudo classe HOVER */
+/* primeiro se define a propriedade do CSS que queremos fazer a transição, depois a duração dessa transição que é defina em MS (milisegundos) */
+
+.meu-elemento {
+    /* display: flex;
+    margin: 150px; */
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    position: relative;
+    left: 0;
+    /* Aqui que a transição acontece */
+    /* transition: border-radius 450ms; */
+    /* Para que todas as transições sigam essa duração, colocar a palavra ALL */
+    transition: all 350ms;
+}
+
+.meu-elemento:hover {
+    border-radius: 50%;
+    background-color: peachpuff;
+    left: 30px;
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* transicoes so  tem afeito se o visitante interage com elas, se nao existe as animacoes que indepedem do usuario */
+/* As animacoes são feitas em duas etapas, primeiro atraves do @KEYFRAMES */
+
+@keyframes crescendo {
+    0% {
+        /* estado inicial da animação */
+        background-color: red;
+    }
+    100% {
+        /* estado final da animação */
+        background-color: yellow;
+        height: 200px;
+        width: 200px;
+        opacity: 0.5;
+    }
+}
+
+/* ===2 etapa== implementando a animação */
+
+.meu-elemento {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100%;
+    /* nome da animação que queremos aplicar ao elemento */
+    animation-name: crescendo;
+    /* tempo que animação levará para concluir */
+    animation-duration: 1000ms;
+    /* numero de vezes que a animação será reproduzida (pode ser um número inteiro positivo ou infinite */
+    animation-iteration-count: infinite;
+    /* por definição seu padão é normal (quando acaba animação ela salta e volta ao frame inicial), alternate ela gera uma rebobinagem que dá a sensação de vai e vem */
+    animation-direction: alternate;
+}
+
+

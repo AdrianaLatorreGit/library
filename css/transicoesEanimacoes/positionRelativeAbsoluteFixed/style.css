@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Position relative: pequenas compensações e sobreposições
+Position absolute: posicione os elementos absolutamente em relação aos lados do corpo
+Position fixed: corrija um elemento e o acompanhe ao rolar
+relative + absolute: o elemento com position absolute toma como refeência as arestas de seu contêiner pai e não o body */
+
+
+html{
+    background-color: rgba(183, 145, 145, 0.292);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 3px solid grey;
+    height: 70px;
+}
+ul {
+    display: flex;
+    /* border: 3px solid red; */
+    padding: 20px;
+}
+li {
+    display: flex;
+    margin: 0 10px;
+}
+img {
+    width: 92%;
+    /* Testanto Position Absolute */
+    /* Top Bottom Left Right para posicionamento*/
+    /* quem segue o posicionamento do relative */
+    /* position: absolute;
+    top:0; */
+}
+
+footer {
+    border: 3px solid grey;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /* Testanto Position Relative */
+    /* quem comanda o posicionamento do absolute */
+    /* Top Bottom Left Right para posicionamento*/
+    /* position: relative;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px; */
+}
+
+.chat {
+    width: 60px;
+    /* Para fixar elemento na tela(relativo a janela) */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

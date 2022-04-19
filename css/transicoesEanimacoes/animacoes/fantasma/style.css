@@ -1,0 +1,24 @@
+* { 
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+/* Teste Fantasma */
+@keyframes fantasma {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        transform: translateY(-20px);
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+.fantasma {
+    margin: 50px;
+    animation: fantasma 2s infinite;
+    
+}

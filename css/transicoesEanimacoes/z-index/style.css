@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Z-Index quanto maior o numero, mais acima o layer estará */
+
+.caixa1 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 30px;
+    z-index: 3;
+}
+
+.caixa2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: yellow;
+    z-index: 2;
+}
