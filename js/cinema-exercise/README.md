@@ -1,0 +1,3 @@
+# cinema-exercise
+
+JavaScript Exercise.
